@@ -1,7 +1,8 @@
 # MT5 Balance & Order Notifications
 
-Automation scripts that connect to MetaTrader 5 via the Python API and post
-account and trade updates to a private Telegram channel.
+This is a MetaTrader 5 automation script that helps with journaling trades
+through automatic updates on account rules, balance, equity, and trade
+orders via a Telegram channel.(WhatsApp coming soon)
 
 ## What's in this project
 
@@ -67,12 +68,16 @@ pip install MetaTrader5 python-dotenv requests
 BALANCE_BOT_TOKEN=your_bot_token_here
 CHANNEL_CHAT_ID=your_numeric_channel_id_here   # e.g. -1001234567890
 
-# FundingPips account (can be any broker/propfirm acc.)
+# FundingPips account
 FP_LOGIN=your_mt5_login
 FP_PASSWORD=your_mt5_password
 FP_SERVER=your_broker_server_name
 
-
+# Maven account (optional — currently commented out in balance_update.py)
+MAVEN_LOGIN=your_mt5_login
+MAVEN_PASSWORD=your_mt5_password
+MAVEN_SERVER=your_broker_server_name
+```
 
 If your Telegram channel is **private**, `CHANNEL_CHAT_ID` must be the
 numeric chat ID (always starts with `-100` for channels) rather than a
