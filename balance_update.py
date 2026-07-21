@@ -48,17 +48,7 @@ MT5_ACCOUNTS = [
         "total_limit_pct": 10.0,
         "tracker_file": "fp_acc_tracker.json"
     },
-    # {
-    #     "name": "Maven Trading Account",
-    #     "login": MVN_LOGIN,
-    #     "password": MVN_PASS,
-    #     "server": MVN_SERVER,
-    #     "target_goal": 20800.00,
-    #     "initial_size": 20000.00,
-    #     "daily_limit_pct": 0.0,
-    #     "total_limit_pct": 10.0,
-    #     "tracker_file": "maven_acc_tracker.json"
-    # }
+    
 ]
 
 
