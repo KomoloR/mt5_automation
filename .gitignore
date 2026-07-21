@@ -1,0 +1,10 @@
+.venv/
+venv/
+.env
+__pycache__/
+*.pyc
+run_log.txt
+order_notify_log.txt
+order_notify_state.json
+fp_acc_tracker.json
+maven_acc_tracker.json
